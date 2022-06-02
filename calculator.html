@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheet-cal.css" />
+    <link rel="stylesheet" href="./stylesheet-nav.css" />
+    <link rel="stylesheet" href="./stylesheet.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <!-- Creating a navigation to house our tabs -->
+    <div class="nav">
+      <ul>
+        <li><a href="./index.html" id="home">About</a></li>
+        <li><a href="./contact.html" id="contact">Contact</a></li>
+        <li><a href="./register.html" id="register">Register</a></li>
+        <li><a href="./login.html" id="login">Login</a></li>
+        <li><a href="./calculator.html" id="calculator">Calculator</a></li>
+      </ul>
+    </div>
+    <h1>Calculator with HTML</h1>
+    <div class="container">
+      <div class="header">Calculator</div>
+      <input type="text" class="result" />
+      <table>
+        <tr>
+          <td>
+            <input type="button" value="AC" class="plain" />
+          </td>
+          <td><input type="button" value="+/-" class="plain" /></td>
+          <td><input type="button" value=" ( " class="plain" /></td>
+          <td><input type="button" value=" ) " class="plain right" /></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="7 " class="plain" /></td>
+          <td><input type="button" value="8 " class="plain" /></td>
+          <td><input type="button" value="9 " class="plain" /></td>
+          <td><input type="button" value=" ÷" class="plain right" /></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="4 " class="plain" /></td>
+          <td><input type="button" value="5 " class="plain" /></td>
+          <td><input type="button" value="6 " class="plain" /></td>
+          <td><input type="button" value=" x" class="plain right" /></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="1 " class="plain" /></td>
+          <td><input type="button" value="2 " class="plain" /></td>
+          <td><input type="button" value="3 " class="plain" /></td>
+          <td><input type="button" value=" - " class="plain right" /></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" value="x²" class="plain" />
+          </td>
+          <td>
+            <input type="button" value="0 " class="plain" />
+          </td>
+          <td><input type="button" value=" .  " class="plain" /></td>
+          <td><input type="button" value=" +" class="plain right" /></td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="button"
+              value="Del"
+              class="plain last-row"
+              id="delete"
+            />
+          </td>
+          <td>
+            <input type="button" value="√ " class="plain last-row" />
+          </td>
+          <td>
+            <input type="button" value="%" class="plain last-row" />
+          </td>
+          <td>
+            <input type="button" value=" =" class="plain right" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <br />
+    <div class="css-3d-text">
+      <a href="./flex-cal.html" id="flex"
+        >Click here to see my Calculator with Flexbox</a
+      >
+    </div>
+    <br />
+    <footer>
+      <span id="footer">© 2022 HENRY UGO OKAM</span>
+    </footer>
+  </body>
+</html>

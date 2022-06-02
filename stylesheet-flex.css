@@ -1,0 +1,93 @@
+/* CSS syntax for flexbox calculator */
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 1 60%;
+  min-width: 400px;
+  margin: 10em;
+  background: #2a2f38;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.back,
+a {
+  border: 1px solid transparent;
+  width: 80px;
+  margin: 10px;
+  font-size: 40px;
+  text-decoration: none;
+  color: #2a2f38;
+  padding: 10px;
+  align-self: flex-start;
+}
+
+h1 {
+  text-align: center;
+}
+.buttons,
+.result-1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 1 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.result-1 {
+  height: 60px;
+  border: 1px inset rgb(113, 103, 103);
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.5em;
+  background: rgba(83, 83, 85, 0.567);
+  color: #fff;
+  padding: 0 10px;
+  margin: 5px 5px 0px 5px;
+  border-radius: 5px;
+}
+.button {
+  display: flex;
+  flex: 0 1 25%;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border: 1px inset rgb(198, 184, 184);
+  border-top: none;
+  border-left: none;
+  cursor: pointer;
+  background: -webkit-linear-gradient(top, #d2d2d2, #ddd);
+  font-size: 1.2em;
+  margin: 1px auto;
+  border-radius: 3px;
+}
+.button:nth-child(4n + 1) {
+  border-left: 1px solid black;
+}
+.button:nth-child(4n),
+.button:last-child {
+  background: #e31d1d;
+  color: rgb(175, 168, 168);
+}
+.zero {
+  flex-grow: 2;
+}
+
+.button:hover {
+  cursor: pointer;
+  transition: 3seconds ease-in;
+  color: rgb(143, 6, 79);
+}
